@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "Id": 1,
+            "title": "Title with Two Very Very Long Long Lines",
+            "description": "And a very long desciption to boot.  Why bother descibing something with so many words?",
+            "Image": "shoe.png"
+        },
+        {
+            "Id": 2,
+            "title": "One Short Title",
+            "description": "And a very long desciption to boot.  Why bother descibing something with so many words?",
+            "Image": "watch.png"
+        },
+        {
+            "Id": 3,
+            "title": "One Short Title",
+            "description": "With a short description.",
+            "Image": "shoe.png"
+        },
+        {
+            "Id": 4,
+            "title": "Title with Two Very Very Long Long Lines",
+            "description": "With a short description.",
+            "Image": "bike.png"
+        },
+        {
+            "Id": 5,
+            "title": "Title with Two Very Very Long Long Lines",
+            "description": "And a very long desciption to boot.  Why bother descibing something with so many words?",
+            "Image": "shoe.png"
+        },
+        {
+            "Id": 6,
+            "title": "Title with Two Very Very Long Long Lines",
+            "description": "And a very long desciption to boot.  Why bother descibing something with so many words?",
+            "Image": "watch.png"
+        }
+    ]
+}
