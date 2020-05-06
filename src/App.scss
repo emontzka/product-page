@@ -72,9 +72,46 @@ p {
 body {
   font-family: 'Open Sans', sans-serif;
   color: $black;
+  background-color: $ivory;
   a {
     font-family: 'Open Sans', sans-serif;
   }
+}
+
+.main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.product-card {
+  background-color: $white;
+  padding: 15px;
+  margin-bottom: 30px;
+  img {
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+  .button {
+    cursor: pointer;
+    border: 2px solid $red;
+    color: $white;
+    background-color: $red;
+    transition: all .3s;
+    display: block;
+    margin-bottom: 0;
+    padding: 10px 0;
+    &:hover {
+      color: $red;
+      background-color: $white;
+      text-decoration: none;
+    }
+
+  }
+}
+.text-area {
+  height: 190px;
+  overflow: auto;
 }
 
 

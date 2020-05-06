@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './images/logo.png';
 import './App.scss';
+import data from './data/productData.json';
+import Product from './components/product';
 
-function App() {
+const App = () => {
+  const [products, setProducts] = useState(null);
+  useEffect(() => setProducts(data), []);
+  if (products === null) {
+    return 'Loading...';
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +31,25 @@ function App() {
         </div>
 
       </header>
+      <section className="main">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xl-3 col-md-4">
+
+            </div>
+            <div className="col-xl-9 col-md-8">
+              <div className="row">
+                {console.dir(Object.values(products)[0])}
+                {Object.values(products)[0].map((p) => {
+                  return <Product key={p.Id} product={p} />;
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
 export default App;
