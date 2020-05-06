@@ -1,44 +1,98 @@
-
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+// COLORS  
+$ivory: #e3e2e6;
+$red: #eb1a50;
+$black: #2b2b2f;
+$white: #fff;
+.h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+}
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+p {
+  font: 700 1rem/1.5;
+  font-weight: 400;
+}
+.page-title {
+  text-align: center;
+  margin-top: 80px;
+}
 .App {
   text-align: center;
+
+}
+
+.App-header {
+  min-height: 470px;
+  width: 100%;
+  background-image: url('./images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $white;
+}
+.container-fluid {
+  max-width: 1200px;
+}
+.header-nav {
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu {
+  display: flex;
+  color: white;
+  margin-bottom: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+    margin-left: 50px;
+  }
+  a {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
+  color: $black;
   a {
     font-family: 'Open Sans', sans-serif;
   }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  // background-color: pink;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// .App-header {
+//   // background-color: pink;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
